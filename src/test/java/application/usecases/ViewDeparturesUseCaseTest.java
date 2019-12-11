@@ -18,7 +18,7 @@ class ViewDeparturesUseCaseTest {
         viewDepartures.invokeWith(connection);
 
         List<Departure> departuresToPresent = presenter.getDocument().departures();
-        assertThat(departuresToPresent).contains(Departure.at("2019-10-05 14:36").withDelay(3));
+        assertThat(departuresToPresent).contains(Departure.at("2019-12-05 14:36").withDelay(3));
     }
 
     private static class TestDeparturePresenter implements DeparturePresenter {
