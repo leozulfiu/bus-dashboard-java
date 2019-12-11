@@ -1,4 +1,4 @@
-package application.adapters;
+package application.adapters.gateways.dtos;
 
 public class ConnectionDto {
     public String from;

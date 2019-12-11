@@ -1,6 +1,9 @@
 package application.usecases;
 
-import application.ports.DepartureTimesGateway;
+import application.domain.Connection;
+import application.domain.Departure;
+import application.domain.Departures;
+import application.usecases.ports.DepartureTimesGateway;
 
 import java.time.LocalDateTime;
 import java.time.Month;

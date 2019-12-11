@@ -1,7 +1,10 @@
 package application.usecases;
 
-import application.ports.DepartureTimesGateway;
-import application.presenters.DeparturePresenter;
+import application.domain.Connection;
+import application.domain.Departures;
+import application.usecases.ports.DepartureTimesGateway;
+import application.usecases.ports.DeparturePresenter;
+import application.usecases.ports.ViewDepartures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

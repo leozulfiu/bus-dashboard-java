@@ -1,8 +1,9 @@
-package application.adapters;
+package application.adapters.gateways;
 
-import application.ports.DepartureTimesGateway;
-import application.usecases.Departures;
-import application.usecases.Connection;
+import application.adapters.gateways.dtos.DeparturesDto;
+import application.usecases.ports.DepartureTimesGateway;
+import application.domain.Departures;
+import application.domain.Connection;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Response;

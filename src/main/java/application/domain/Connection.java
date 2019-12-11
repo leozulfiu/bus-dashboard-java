@@ -1,4 +1,4 @@
-package application.usecases;
+package application.domain;
 
 public class Connection {
     private Station from;

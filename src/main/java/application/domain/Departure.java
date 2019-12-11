@@ -1,6 +1,7 @@
-package application.usecases;
+package application.domain;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
@@ -38,6 +39,10 @@ public class Departure {
     public Departure withDelay(int delayInMinutes) {
         this.departureDelay = Delay.of(delayInMinutes);
         return this;
+    }
+
+    public LocalTime time() {
+        return this.departureTime.toLocalTime();
     }
 
     @Override

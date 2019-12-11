@@ -1,7 +1,7 @@
-package application.adapters;
+package application.adapters.gateways.dtos;
 
-import application.usecases.Departure;
-import application.usecases.Departures;
+import application.domain.Departure;
+import application.domain.Departures;
 
 import java.util.List;
 

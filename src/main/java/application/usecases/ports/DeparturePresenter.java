@@ -1,4 +1,4 @@
-package application.presenters;
+package application.usecases.ports;
 
 import application.usecases.DepartureTimeTableDocument;
 

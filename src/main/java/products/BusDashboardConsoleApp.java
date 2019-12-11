@@ -1,11 +1,10 @@
 package products;
 
-import application.adapters.SearchApiGateway;
-import application.usecases.Connection;
-import application.usecases.ViewDepartures;
+import application.adapters.gateways.SearchApiGateway;
+import application.adapters.presenters.ConsolePresenter;
+import application.domain.Connection;
+import application.usecases.ports.ViewDepartures;
 import application.usecases.ViewDeparturesUseCase;
-
-import java.io.Console;
 
 
 public class BusDashboardConsoleApp {
@@ -19,8 +18,7 @@ public class BusDashboardConsoleApp {
                 Connection.from("Zürich, Glaubtenstrasse").to("Zürich, Holzerhurd")
         );
 
-        Console console = System.console();
-        console.printf(presenter.asString());
+        System.out.print(presenter.asPlainString());
     }
 
     public static void main(String[] args) {

@@ -1,23 +1,23 @@
-package application.usecases;
+package application.domain;
 
 import java.time.Duration;
 import java.util.Objects;
 
 public class Delay {
-    public static final Delay ZERO = new Delay(Duration.ZERO);
+    static final Delay ZERO = new Delay(Duration.ZERO);
 
     private final Duration delay;
 
-    public Delay(Duration delay) {
+    private Delay(Duration delay) {
         this.delay = delay;
     }
 
-    public static Delay of(String prefixedDelayInMinutes) {
+    static Delay of(String prefixedDelayInMinutes) {
         String delayInMinutes = prefixedDelayInMinutes.substring(1);
         return new Delay(Duration.ofMinutes(Long.parseLong(delayInMinutes)));
     }
 
-    public static Delay of(int delayInMinutes) {
+    static Delay of(int delayInMinutes) {
         return new Delay(Duration.ofMinutes(delayInMinutes));
     }
 

@@ -1,6 +1,9 @@
 package application.usecases;
 
-import application.presenters.DeparturePresenter;
+import application.domain.Connection;
+import application.domain.Departure;
+import application.usecases.ports.DeparturePresenter;
+import application.usecases.ports.ViewDepartures;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
